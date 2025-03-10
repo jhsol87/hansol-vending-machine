@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'idea'
+
+version = '1.0'
+mainClassName = 'com.protopie.test.ProtopieTest'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
